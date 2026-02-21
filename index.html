@@ -1257,8 +1257,8 @@ function changeQty(delta) {
     updatePrices();
     if (typeof fbq !== 'undefined') {
         fbq('track', 'AddToCart', {
-            value: qty * UNIT_PRICE / 290,
-            currency: 'USD',
+            value: qty * UNIT_PRICE,
+            currency: 'DZD',
             content_name: PRODUCT_NAME,
             num_items: qty
         });
@@ -1302,8 +1302,8 @@ document.getElementById('communeSelect').addEventListener('change', function() {
     if (this.value && typeof fbq !== 'undefined') {
         fbq('track', 'AddToCart', {
             content_name: PRODUCT_NAME,
-            value: (qty * UNIT_PRICE + deliveryPrice) / 290,
-            currency: 'USD',
+            value: qty * UNIT_PRICE + deliveryPrice,
+            currency: 'DZD',
             num_items: qty
         });
     }
@@ -1424,8 +1424,8 @@ document.getElementById('orderForm').addEventListener('submit', async function(e
     if (typeof fbq !== 'undefined') {
         fbq('track', 'InitiateCheckout', {
             content_name: PRODUCT_NAME,
-            value: (qty * UNIT_PRICE + deliveryPrice) / 290,
-            currency: 'USD',
+            value: qty * UNIT_PRICE + deliveryPrice,
+            currency: 'DZD',
             num_items: qty
         });
     }
@@ -1467,8 +1467,8 @@ document.getElementById('orderForm').addEventListener('submit', async function(e
                     content_name: PRODUCT_NAME,
                     content_ids: ['STATION-LANGER'],
                     content_type: 'product',
-                    value: (qty * UNIT_PRICE + deliveryPrice) / 290,
-                    currency: 'USD',
+                    value: qty * UNIT_PRICE + deliveryPrice,
+                    currency: 'DZD',
                     num_items: qty
                 });
                 fbq('track', 'Lead', {
