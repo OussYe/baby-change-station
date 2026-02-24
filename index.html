@@ -22,7 +22,7 @@
         content_category: 'Puériculture',
         content_ids: ['STATION-LANGER'],
         content_type: 'product',
-        value: 7000,
+        value: 5000,
         currency: 'DZD'
     });
     </script>
@@ -728,8 +728,8 @@
 <!-- ═══════════════════════════════════════════════ -->
 <div class="price-block">
     <div class="price-old" data-ar="السعر المعتاد: <span style='direction:ltr;display:inline-block;'>9 000 دج</span>" data-fr="Prix habituel : 9 000 DA">السعر المعتاد: <span style="direction:ltr;display:inline-block;">9 000 دج</span></div>
-    <div class="price-main" data-ar="7 000 دج" data-fr="7 000 <sub>DA</sub>" style="direction:ltr;display:inline-block;">7 000 <sub>DA</sub></div>
-    <div class="price-saving" data-ar="🔥 توفر 2,000 دج — عرض محدود" data-fr="🔥 Vous économisez 2 000 DA — Offre limitée">🔥 توفر 2,000 دج — عرض محدود</div>
+    <div class="price-main" data-ar="5 000 دج" data-fr="5 000 <sub>DA</sub>" style="direction:ltr;display:inline-block;">5 000 <sub>DA</sub></div>
+    <div class="price-saving" data-ar="🔥 توفر 4,000 دج — عرض محدود" data-fr="🔥 Vous économisez 4 000 DA — Offre limitée">🔥 توفر 4,000 دج — عرض محدود</div>
     <div class="stock-info"><span class="dot"></span> <span data-ar="مخزون محدود — 23 وحدة متبقية فقط" data-fr="Stock limité — seulement 23 unités restantes">مخزون محدود — 23 وحدة متبقية فقط</span></div>
 </div>
 
@@ -935,7 +935,7 @@
             </div>
             <div class="total-row">
                 <div class="total-label" data-ar="المجموع" data-fr="Total à payer">المجموع</div>
-                <div class="total-price" id="totalDisplay">7 000 DA</div>
+                <div class="total-price" id="totalDisplay">5 000 DA</div>
             </div>
 
             <!-- Submit -->
@@ -1049,7 +1049,7 @@
 <div class="sticky-cta" id="stickyCta">
     <div class="sticky-price">
         <div class="s-old" style="direction:ltr;display:inline-block;">9 000 DA</div>
-        <div class="s-price" style="direction:ltr;display:inline-block;">7 000 DA</div>
+        <div class="s-price" style="direction:ltr;display:inline-block;">5 000 DA</div>
     </div>
     <button class="sticky-btn" onclick="scrollToForm()" data-ar="🛒 اطلب الآن" data-fr="🛒 Commander">🛒 اطلب الآن</button>
 </div>
@@ -1079,7 +1079,7 @@
 // ══════════════════════════════════════════════════════
 //  CONFIGURATION
 // ══════════════════════════════════════════════════════
-const UNIT_PRICE = 7000;
+const UNIT_PRICE = 5000;
 const PRODUCT_NAME = 'Station à Langer Portable';
 const ECOTRACK_API_KEY = 'Vio3QKV5fuFDizFmiivXQlBhvgKkB4NATms6qa1IudVegWlMtZQ5G9WhwMq3';
 const ECOTRACK_BASE_URL = 'https://golivri.ecotrack.dz/api/v1';
@@ -1489,7 +1489,7 @@ document.getElementById('orderForm').addEventListener('submit', async function(e
             deliveryPrice = 0;
             document.getElementById('qtyDisplay').textContent = '1';
             document.getElementById('quantite').value = '1';
-            document.getElementById('totalDisplay').textContent = '7 000 DA';
+            document.getElementById('totalDisplay').textContent = '5 000 DA';
             const emptyText = currentLang === 'ar' ? '— (اختر ولايتك)' : '— (choisissez votre wilaya)';
             document.getElementById('deliveryFeeDisplay').textContent = emptyText;
             const commPlaceholder = currentLang === 'ar' ? 'اختر أولاً ولايتك' : 'Choisissez d\u0027abord votre wilaya';
